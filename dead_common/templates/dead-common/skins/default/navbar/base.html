@@ -1,0 +1,25 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" id="dead-navbar-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dead-navbar-top-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            {% if SHOW_NAVBAR_TITLE %}
+                <a class="navbar-brand" href="{% url 'home' %}">{{ NAVBAR_TITLE }}</a>
+            {% endif %}
+        </div>
+        <div class="collapse navbar-collapse" id="dead-navbar-top-collapse">
+            <ul class="nav navbar-nav">
+                {% include "dead-common/skins/default/navbar/home.html" %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if SHOW_NAVBAR_CONTACT %}
+                    {% include "dead-common/skins/default/navbar/contact.html" %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>

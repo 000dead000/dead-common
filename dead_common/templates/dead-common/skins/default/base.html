@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Django PES Framework">
+        <meta name="author" content="Ariel Calzada - ariel.calzada@gmail.com">
+        <meta name="keywords" content="web,django,html,css,000paradox000,javascript,python,linux,jquery,bootstrap">
+
+        <title>{{ WINDOW_TITLE }}</title>
+        <link href="{% static 'favicon/favicon.png' %}" rel="icon">
+
+        {% include "dead-common/skins/default/dependencies/top/external.html" %}
+        {% include "dead-common/skins/default/dependencies/top/internal.html" %}
+
+        {% include "common/dependencies/top/external.html" %}
+        {% include "common/dependencies/top/internal.html" %}
+
+        {% block CSS_TOP %}{% endblock %}
+        {% block JS_TOP %}{% endblock %}
+    </head>
+
+    <body>
+        {% include "dead-common/skins/default/navbar/base.html" %}
+
+        <div class="container" id="dead-container">
+            {% include "dead-common/skins/default/messages.html" %}
+            {% block BODY %}{% endblock %}
+        </div>
+
+        {% include "dead-common/skins/default/footer/base.html" %}
+
+        <script type="text/javascript">
+            var STATIC_URL = "{% static '' %}";
+        </script>
+
+        {% include "default/dependencies/bottom/external.html" %}
+        {% include "default/dependencies/bottom/internal.html" %}
+
+        {% block CSS_BOTTOM %}{% endblock %}
+        {% block JS_BOTTOM %}{% endblock %}
+    </body>
+</html>
