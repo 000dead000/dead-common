@@ -1,0 +1,63 @@
+/**
+ * Crispy forms
+ */
+.asteriskField {
+    color: #FF0000;
+}
+
+/**
+ * Bootstrap
+ */
+.table thead {
+    background-color: #3C3C3C;
+    color: #D4D4D4;
+}
+
+/**
+ * Overlay plain
+ */
+.jQuery-plainOverlay-progress {
+  border-color: #CDCDCD !important;
+}
+
+.jQuery-plainOverlay-progress-legacy div {
+  background-color: #CDCDCD !important;
+}
+
+/**
+ * Common
+ */
+.hidden-content {
+    display: none;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/**
+ * Date picker
+ */
+
+.date-picker-control .input-group-addon {
+    cursor: pointer;
+}
+
+.date-week-picker .datepicker tbody tr:hover {
+	background-color: #eee;
+}
+
+.date-week-picker .datepicker tbody tr:hover td,
+.date-week-picker .datepicker tbody tr td.active {
+	border-radius: 0;
+}
+
+.date-week-picker .datepicker tbody tr:hover td:last-child,
+.date-week-picker .datepicker tbody tr td.active:last-child {
+	border-radius: 0 3px 3px 0;
+}
+
+.date-week-picker .datepicker tbody tr:hover td:first-child,
+.date-week-picker .datepicker tbody tr  td.active:nth-child(2) {
+	border-radius: 3px 0 0 3px;
+}
