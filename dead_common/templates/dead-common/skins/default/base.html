@@ -34,8 +34,11 @@
             var STATIC_URL = "{% static '' %}";
         </script>
 
-        {% include "default/dependencies/bottom/external.html" %}
-        {% include "default/dependencies/bottom/internal.html" %}
+        {% include "dead-common/skins/default/dependencies/bottom/external.html" %}
+        {% include "dead-common/skins/default/dependencies/bottom/internal.html" %}
+
+        {% include "common/dependencies/bottom/external.html" %}
+        {% include "common/dependencies/bottom/internal.html" %}
 
         {% block CSS_BOTTOM %}{% endblock %}
         {% block JS_BOTTOM %}{% endblock %}
