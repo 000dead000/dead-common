@@ -15,6 +15,17 @@
                     <a href="{% url 'dead-common:tests-basic-normal' %}?test_name=mensajes" class="btn btn-success">Generar</a>
                 </td>
             </tr>
+            <tr>
+                <td>Páginas de error</td>
+                <td>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a target="_blank" href="{% url 'dead-common:tests-basic-normal' %}?test_name=error&code=1">400 Bad request</a></li>
+                        <li role="presentation"><a target="_blank" href="{% url 'dead-common:tests-basic-normal' %}?test_name=error&code=2">403 HTTP forbidden</a></li>
+                        <li role="presentation"><a target="_blank" href="{% url 'dead-common:tests-basic-normal' %}?test_name=error&code=3">404 Page not found</a></li>
+                        <li role="presentation"><a target="_blank" href="{% url 'dead-common:tests-basic-normal' %}?test_name=error&code=4">500 Server error</a></li>
+                    </ul>
+                </td>
+            </tr>
         </tbody>
     </table>
 {% endblock %}
