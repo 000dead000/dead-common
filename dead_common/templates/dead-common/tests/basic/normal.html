@@ -1,8 +1,4 @@
 {% extends "dead-common/tests/basic/base.html" %}
 
 {% block TEST_BODY_CONTENT %}
-    <form action="{{ action|default_if_none:'#' }}" id="dead-form" class="no-submit dead-form" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {% include "dead-common/tests/basic/form.html" %}
-    </form>
 {% endblock %}
