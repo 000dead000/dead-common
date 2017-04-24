@@ -61,3 +61,10 @@
 .date-week-picker .datepicker tbody tr  td.active:nth-child(2) {
 	border-radius: 3px 0 0 3px;
 }
+
+/**
+ * Forms
+ */
+.dead-form-control-hint {
+    text-align: right;
+}
