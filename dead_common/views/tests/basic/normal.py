@@ -44,7 +44,7 @@ class TestsBasicNormalCBV(TemplateView):
         context['tests_tab'] = 'basic'
         context['tests_subtab'] = 'normal'
 
-        context['test_name'] = self.request.GET.get("name", "")
+        context['test_name'] = self.request.GET.get("test_name", "")
 
         if context['test_name'] == "mensajes":
             self.generar_mensajes()
