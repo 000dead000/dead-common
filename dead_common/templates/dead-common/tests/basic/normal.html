@@ -1,4 +1,20 @@
 {% extends "dead-common/tests/basic/base.html" %}
 
 {% block TEST_BODY_CONTENT %}
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mensajes</td>
+                <td>
+                    <a href="{% url 'dead-common:tests-basic-normal' %}?test_name=mensajes" class="btn btn-success">Generar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 {% endblock %}
